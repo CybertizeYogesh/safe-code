@@ -1,14 +1,14 @@
-import React from "react";
+﻿import React from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import Sidebar from "@/components/Sidebar";
 
 export const metadata = {
-  title: "Office Moving Services | Indian Best Packers & Movers",
-  description: "Corporate office shifting and business relocation services. Fast and organized server moving, IT equipment handling, and workstation setup.",
+  title: "Office Shifting Services Bangalore | Best Moving Company",
+  description: "Minimize office downtime with the best moving company for office relocation in Bangalore. We handle IT equipment, desks, and archives securely.",
   alternates: {
-    canonical: "https://www.indianbestpackersmovers.com/office.html",
+    canonical: "https://www.agarwalontimecargopackers.com/office.html",
   },
 };
 
@@ -20,11 +20,11 @@ export default function OfficeMoving() {
     "description": "Corporate office shifting and business relocation services. Fast and organized server moving, IT equipment handling, and workstation setup.",
     "provider": {
       "@type": "LocalBusiness",
-      "name": "Indian Best Packers & Movers",
-      "image": "https://www.indianbestpackersmovers.com/assets/img/logo.png",
-      "telephone": "+91 8005746241",
-      "email": "info@indianbestpackersmovers.com",
-      "url": "https://www.indianbestpackersmovers.com"
+      "name": "Agarwal On Time Cargo Packers & Movers",
+      "image": "https://www.agarwalontimecargopackers.com/assets/img/logo.png",
+      "telephone": "+91 8095279595",
+      "email": "agarwalpackersmoversa@gmail.com",
+      "url": "https://www.agarwalontimecargopackers.com"
     },
     "areaServed": "India"
   };
@@ -108,3 +108,4 @@ export default function OfficeMoving() {
     </>
   );
 }
+

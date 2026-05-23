@@ -1,13 +1,13 @@
-import React from "react";
+﻿import React from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 
 export const metadata = {
-  title: "Gallery | Indian Best Packers & Movers",
+  title: "Gallery | Agarwal On Time Cargo Packers & Movers",
   description: "Browse our gallery of packing, moving, vehicle transportation, and warehousing operations showing our professional shifting process.",
   alternates: {
-    canonical: "https://www.indianbestpackersmovers.com/gallery.html",
+    canonical: "https://www.agarwalontimecargopackers.com/gallery.html",
   },
 };
 
@@ -27,9 +27,9 @@ export default function Gallery() {
   const schemaJson = {
     "@context": "https://schema.org",
     "@type": "ImageGallery",
-    "name": "Indian Best Packers & Movers Gallery",
+    "name": "Agarwal On Time Cargo Packers & Movers Gallery",
     "description": "Browse our gallery of packing, moving, vehicle transportation, and warehousing operations showing our professional shifting process.",
-    "image": images.map((img) => `https://www.indianbestpackersmovers.com${img.src}`),
+    "image": images.map((img) => `https://www.agarwalontimecargopackers.com${img.src}`),
   };
 
   return (
@@ -78,3 +78,4 @@ export default function Gallery() {
     </>
   );
 }
+

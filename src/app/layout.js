@@ -1,4 +1,4 @@
-import { DM_Sans, Archivo } from "next/font/google";
+﻿import { DM_Sans, Archivo } from "next/font/google";
 import "@/styles/app.min.css";
 import "@/styles/fontawesome.min.css";
 import "@/styles/style.css";
@@ -24,19 +24,19 @@ export const viewport = {
 
 export const metadata = {
   title: {
-    default: "Indian Best Packers & Movers | Professional Shifting Services",
-    template: "%s | Indian Best Packers & Movers",
+    default: "Agarwal Packers and Movers Bangalore | Movers and Packers Bangalore",
+    template: "%s | Agarwal On Time Cargo Packers & Movers",
   },
-  description: "Indian Best Packers & Movers Jaipur offers reliable house shifting, office relocation, car shipping, and packing services in Jaipur and all over India.",
-  metadataBase: new URL("https://www.indianbestpackersmovers.com"),
+  description: "Agarwal Packers and Movers Bangalore offers professional home moving services, household shifting services, and secure car transportation. Get a free quote today!",
+  metadataBase: new URL("https://www.agarwalontimecargopackers.com"),
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "Indian Best Packers & Movers | Professional Shifting Services",
-    description: "Indian Best Packers & Movers Jaipur offers reliable house shifting, office relocation, car shipping, and packing services in Jaipur and all over India.",
-    url: "https://www.indianbestpackersmovers.com",
-    siteName: "Indian Best Packers & Movers",
+    title: "Agarwal Packers and Movers Bangalore | Movers and Packers Bangalore",
+    description: "Agarwal Packers and Movers Bangalore offers professional home moving services, household shifting services, and secure car transportation. Get a free quote today!",
+    url: "https://www.agarwalontimecargopackers.com",
+    siteName: "Agarwal On Time Cargo Packers & Movers",
     locale: "en_IN",
     type: "website",
     images: [
@@ -44,14 +44,14 @@ export const metadata = {
         url: "/assets/img/logo.png",
         width: 800,
         height: 600,
-        alt: "Indian Best Packers & Movers Logo",
+        alt: "Agarwal On Time Cargo Packers & Movers Logo",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Indian Best Packers & Movers | Professional Shifting Services",
-    description: "Indian Best Packers & Movers Jaipur offers reliable house shifting, office relocation, car shipping, and packing services in Jaipur and all over India.",
+    title: "Agarwal Packers and Movers Bangalore | Movers and Packers Bangalore",
+    description: "Agarwal Packers and Movers Bangalore offers professional home moving services, household shifting services, and secure car transportation. Get a free quote today!",
     images: ["/assets/img/logo.png"],
   },
   robots: {
@@ -79,3 +79,4 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
+

@@ -4,7 +4,7 @@ import React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-export default function Sidebar() {
+export default function Sidebar({ wrapWithAside = true }) {
   const pathname = usePathname();
 
   const services = [
@@ -19,26 +19,30 @@ export default function Sidebar() {
     { name: "Sea Freight Cargo", path: "/sea.html" },
   ];
 
-  return (
-    <aside className="sidebar-area">
-      <div className="widget widget_categories">
-        <h3 className="widget_title">Services Categories</h3>
-        <ul>
-          {services.map((service, idx) => {
-            const isActive = pathname === service.path || pathname === service.path.replace(".html", "");
-            return (
-              <li key={idx} className={isActive ? "active" : ""}>
-                <Link href={service.path}>
-                  {service.name}
-                </Link>
-                <span>
-                  <i className="fa-sharp fa-light fa-arrow-right"></i>
-                </span>
-              </li>
-            );
-          })}
-        </ul>
-      </div>
-    </aside>
+  const content = (
+    <div className="widget widget_categories">
+      <h3 className="widget_title">Services Categories</h3>
+      <ul>
+        {services.map((service, idx) => {
+          const isActive = pathname === service.path || pathname === service.path.replace(".html", "");
+          return (
+            <li key={idx} className={isActive ? "active" : ""}>
+              <Link href={service.path}>
+                {service.name}
+              </Link>
+              <span>
+                <i className="fa-sharp fa-light fa-arrow-right"></i>
+              </span>
+            </li>
+          );
+        })}
+      </ul>
+    </div>
   );
+
+  if (wrapWithAside) {
+    return <aside className="sidebar-area">{content}</aside>;
+  }
+
+  return content;
 }

@@ -1,14 +1,14 @@
-import React from "react";
+﻿import React from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import Sidebar from "@/components/Sidebar";
 
 export const metadata = {
-  title: "Sea Freight Cargo | Indian Best Packers & Movers",
+  title: "Sea Freight Cargo | Agarwal On Time Cargo Packers & Movers",
   description: "International ocean freight and sea cargo services. Full Container Load (FCL) and Less than Container Load (LCL) logistics support.",
   alternates: {
-    canonical: "https://www.indianbestpackersmovers.com/sea.html",
+    canonical: "https://www.agarwalontimecargopackers.com/sea.html",
   },
 };
 
@@ -20,11 +20,11 @@ export default function SeaFreightCargo() {
     "description": "International ocean freight and sea cargo services. Full Container Load (FCL) and Less than Container Load (LCL) logistics support.",
     "provider": {
       "@type": "LocalBusiness",
-      "name": "Indian Best Packers & Movers",
-      "image": "https://www.indianbestpackersmovers.com/assets/img/logo.png",
-      "telephone": "+91 8005746241",
-      "email": "info@indianbestpackersmovers.com",
-      "url": "https://www.indianbestpackersmovers.com"
+      "name": "Agarwal On Time Cargo Packers & Movers",
+      "image": "https://www.agarwalontimecargopackers.com/assets/img/logo.png",
+      "telephone": "+91 8095279595",
+      "email": "agarwalpackersmoversa@gmail.com",
+      "url": "https://www.agarwalontimecargopackers.com"
     },
     "areaServed": "India"
   };
@@ -109,3 +109,4 @@ export default function SeaFreightCargo() {
     </>
   );
 }
+

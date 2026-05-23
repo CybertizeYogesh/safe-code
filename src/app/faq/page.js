@@ -1,14 +1,14 @@
-import React from "react";
+﻿import React from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import FAQAccordion from "@/components/FAQAccordion";
 
 export const metadata = {
-  title: "Faq's | Indian Best Packers & Movers",
+  title: "Faq's | Agarwal On Time Cargo Packers & Movers",
   description: "Frequently Asked Questions about our vehicle transport, domestic shifting, packing materials, delay policies, claims, and other relocation details.",
   alternates: {
-    canonical: "https://www.indianbestpackersmovers.com/faq.html",
+    canonical: "https://www.agarwalontimecargopackers.com/faq.html",
   },
 };
 
@@ -20,11 +20,11 @@ export default function FAQPage() {
     },
     {
       question: "Where do I need to drop off and pick up my vehicle?",
-      answer: "Indian Best Packers & Movers offers door-to-door vehicle relocation services. You do not have to drop off or pick up your vehicle from any other location.",
+      answer: "Agarwal On Time Cargo Packers & Movers offers door-to-door vehicle relocation services. You do not have to drop off or pick up your vehicle from any other location.",
     },
     {
       question: "How long will my vehicle shipment take?",
-      answer: "The duration of shipment of your vehicle will depend on the distance to be covered. However, the Indian Best Packers & Movers team is highly efficient and will ensure quick delivery of your vehicle.",
+      answer: "The duration of shipment of your vehicle will depend on the distance to be covered. However, the Agarwal On Time Cargo Packers & Movers team is highly efficient and will ensure quick delivery of your vehicle.",
     },
     {
       question: "Are there any circumstances that could cause a delay in my delivery?",
@@ -32,11 +32,11 @@ export default function FAQPage() {
     },
     {
       question: "What if there is damage to my vehicle during auto transportation?",
-      answer: "In case of damage to your vehicle, you can contact our team of dedicated claim surveyors available at each branch. These are available to all your customer queries. Indian Best Packers & Movers will settle your claim within just 14 days from the date of generation of the claim.",
+      answer: "In case of damage to your vehicle, you can contact our team of dedicated claim surveyors available at each branch. These are available to all your customer queries. Agarwal On Time Cargo Packers & Movers will settle your claim within just 14 days from the date of generation of the claim.",
     },
     {
-      question: "Why one should choose Indian Best Packers & Movers Jaipur?",
-      answer: "Indian Best Packers & Movers Jaipur values the client and his valuable belongings. We have the appropriate vehicle carrier which can load the car/bike in your presence at your home and similarly can deliver the same at your new location.",
+      question: "Why one should choose Agarwal On Time Cargo Packers & Movers?",
+      answer: "Agarwal On Time Cargo Packers & Movers values the client and his valuable belongings. We have the appropriate vehicle carrier which can load the car/bike in your presence at your home and similarly can deliver the same at your new location.",
     },
   ];
 
@@ -119,3 +119,4 @@ export default function FAQPage() {
     </>
   );
 }
+

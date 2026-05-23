@@ -1,18 +1,22 @@
-import React from "react";
+﻿import React from "react";
 import dynamic from "next/dynamic";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import HeroSlider from "@/components/HeroSlider";
 import QuickQuoteForm from "@/components/QuickQuoteForm";
 import Link from "next/link";
+import Counter from "@/components/Counter";
+import { locationsList } from "@/data/locations";
+
+
 
 const ServiceSlider = dynamic(() => import("@/components/ServiceSlider"), { ssr: true });
 const FAQAccordion = dynamic(() => import("@/components/FAQAccordion"), { ssr: true });
 const TestimonialSlider = dynamic(() => import("@/components/TestimonialSlider"), { ssr: true });
 
 export const metadata = {
-  title: "Best Packers and Movers in Jaipur | Home Shifting Services",
-  description: "Indian Best Packers & Movers Jaipur is your trusted partner for household shifting, office moving, vehicle transport, and storage services. Get a free quote today!",
+  title: "Agarwal Packers and Movers Bangalore | Best Packers and Movers in Bangalore",
+  description: "Looking for local packers and movers near me? Agarwal Packers and Movers Bangalore offers reliable home moving services, household shifting services, and car transportation at affordable charges. Get a free quote today!",
   alternates: {
     canonical: "/",
   },
@@ -24,7 +28,7 @@ export default function Home() {
       title: "House Shifting",
       path: "/house.html",
       image: "/img/blog-1.jpg",
-      desc: "The safe and proper packaging of goods is of paramount importance to us. We, Indian Best Packers & Movers..",
+      desc: "The safe and proper packaging of goods is of paramount importance to us. We, Agarwal On Time Cargo Packers & Movers..",
       discount: "Best Discount"
     },
     {
@@ -45,7 +49,7 @@ export default function Home() {
       title: "Domestic Relocation",
       path: "/domestic.html",
       image: "/img/domestic.jpg",
-      desc: "Indian Best Packers & Movers has devised convenient and brilliant ways to move its customers' households..",
+      desc: "Agarwal On Time Cargo Packers & Movers has devised convenient and brilliant ways to move its customers' households..",
       discount: "Best Discount"
     },
     {
@@ -73,7 +77,7 @@ export default function Home() {
       title: "Air Cargo",
       path: "/air.html",
       image: "/img/air-cargo.jpg",
-      desc: "Indian Best Packers & Movers offers to our clients ,a cost effective, secure, timely and efficient solution..",
+      desc: "Agarwal On Time Cargo Packers & Movers offers to our clients ,a cost effective, secure, timely and efficient solution..",
       discount: "Best Discount"
     }
   ];
@@ -81,17 +85,17 @@ export default function Home() {
   const testimonials = [
     {
       name: "Pradum Gaur",
-      location: "Jaipur",
+      location: "Bangalore",
       rating: 5,
       title: "Sparkling Clean Home",
-      text: "Good service given by indian best packers and movers they shifted my office item from jaipur to noida .the good reached on time with full safety."
+      text: "Good service given by Agarwal On Time Cargo Packers and Movers they shifted my office item from Bangalore to noida .the good reached on time with full safety."
     },
     {
       name: "Mukesh Sharma",
-      location: "Jaipur",
+      location: "Bangalore",
       rating: 5,
       title: "Professional & Reliable",
-      text: "I recently used indian best packers and movers in jaipur for my home relocation, and I was very impressed with their service. Their team members were very professional, punctual and used high-quality packing material"
+      text: "I recently used Agarwal On Time Cargo Packers and Movers in Bangalore for my home relocation, and I was very impressed with their service. Their team members were very professional, punctual and used high-quality packing material"
     },
     {
       name: "Virendra",
@@ -116,11 +120,11 @@ export default function Home() {
     },
     {
       question: "Where do I need to drop off and pick up my vehicle?",
-      answer: "Indian Best Packers & Movers offers door-to-door vehicle relocation services. You do not have to drop off or pick up your vehicle from any other location."
+      answer: "Agarwal On Time Cargo Packers & Movers offers door-to-door vehicle relocation services. You do not have to drop off or pick up your vehicle from any other location."
     },
     {
       question: "How long will my vehicle shipment take?",
-      answer: "The duration of shipment of your vehicle will depend on the distance to be covered. However, the Indian Best Packers & Movers team is highly efficient and will ensure quick delivery of your vehicle."
+      answer: "The duration of shipment of your vehicle will depend on the distance to be covered. However, the Agarwal On Time Cargo Packers & Movers team is highly efficient and will ensure quick delivery of your vehicle."
     },
     {
       question: "Are there any circumstances that could cause a delay in my delivery?",
@@ -128,29 +132,24 @@ export default function Home() {
     },
     {
       question: "What if there is damage to my vehicle during auto transportation?",
-      answer: "In case of damage to your vehicle, you can contact our team of dedicated claim surveyors available at each branch. These are available to all your customer queries. Indian Best Packers & Movers will settle your claim within just 14 days from the date of generation of the claim."
+      answer: "In case of damage to your vehicle, you can contact our team of dedicated claim surveyors available at each branch. These are available to all your customer queries. Agarwal On Time Cargo Packers & Movers will settle your claim within just 14 days from the date of generation of the claim."
     },
     {
-      question: "Why one should choose Indian Best Packers & Movers Jaipur?",
-      answer: "Indian Best Packers & Movers Jaipur values the client and his valuable belongings. We have the appropriate vehicle carrier which can load the car/bike in your presence at your home and similarly can deliver the same at your new location."
+      question: "Why one should choose Agarwal On Time Cargo Packers & Movers?",
+      answer: "Agarwal On Time Cargo Packers & Movers values the client and his valuable belongings. We have the appropriate vehicle carrier which can load the car/bike in your presence at your home and similarly can deliver the same at your new location."
     }
   ];
 
   const orgSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "Indian Best Packers & Movers",
-    "url": "https://www.indianbestpackersmovers.com",
-    "logo": "https://www.indianbestpackersmovers.com/assets/img/logo.png",
-    "sameAs": [
-      "https://www.facebook.com/indianbestpackers",
-      "https://www.instagram.com/indianbestpackersinjaipur/?igsh=cm81OThqZmZqanY5",
-      "https://youtube.com/@packersandmoversinjaipur9686?si=yUEdf5y6mY6eWQv7",
-      "https://x.com/Pramod67075947?t=vztkl5zRL_5T9rd6a3XPlQ&s=09"
-    ],
+    "name": "Agarwal On Time Cargo Packers & Movers",
+    "url": "https://www.agarwalontimecargopackers.com",
+    "logo": "https://www.agarwalontimecargopackers.com/assets/img/logo.png",
+    "sameAs": [],
     "contactPoint": {
       "@type": "ContactPoint",
-      "telephone": "+91 8005746241",
+      "telephone": "+91 8095279595",
       "contactType": "customer service",
       "areaServed": "IN",
       "availableLanguage": ["en", "Hindi"]
@@ -160,11 +159,11 @@ export default function Home() {
   const websiteSchema = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "name": "Indian Best Packers & Movers",
-    "url": "https://www.indianbestpackersmovers.com",
+    "name": "Agarwal On Time Cargo Packers & Movers",
+    "url": "https://www.agarwalontimecargopackers.com",
     "potentialAction": {
       "@type": "SearchAction",
-      "target": "https://www.indianbestpackersmovers.com/?s={search_term_string}",
+      "target": "https://www.agarwalontimecargopackers.com/?s={search_term_string}",
       "query-input": "required name=search_term_string"
     }
   };
@@ -172,24 +171,24 @@ export default function Home() {
   const localBusinessSchema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "name": "Indian Best Packers & Movers",
-    "image": "https://www.indianbestpackersmovers.com/assets/img/logo.png",
-    "@id": "https://www.indianbestpackersmovers.com/#localbusiness",
-    "url": "https://www.indianbestpackersmovers.com",
-    "telephone": "+91 8005746241",
-    "email": "info@indianbestpackersmovers.com",
+    "name": "Agarwal On Time Cargo Packers & Movers",
+    "image": "https://www.agarwalontimecargopackers.com/assets/img/logo.png",
+    "@id": "https://www.agarwalontimecargopackers.com/#localbusiness",
+    "url": "https://www.agarwalontimecargopackers.com",
+    "telephone": "+91 8095279595",
+    "email": "agarwalpackersmoversa@gmail.com",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Plot No. 31,32, Shri Jagdishpuri, Heerapura, Ajmer Road",
-      "addressLocality": "Jaipur",
-      "addressRegion": "Rajasthan",
-      "postalCode": "302021",
+      "streetAddress": "#30 near marthalli bridge",
+      "addressLocality": "Bangalore",
+      "addressRegion": "Karnataka",
+      "postalCode": "560037",
       "addressCountry": "IN"
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": 26.8876,
-      "longitude": 75.7618
+      "latitude": 12.9562,
+      "longitude": 77.6980
     },
     "openingHoursSpecification": {
       "@type": "OpeningHoursSpecification",
@@ -205,10 +204,7 @@ export default function Home() {
       "opens": "00:00",
       "closes": "23:59"
     },
-    "sameAs": [
-      "https://www.facebook.com/indianbestpackers",
-      "https://www.instagram.com/indianbestpackersinjaipur/?igsh=cm81OThqZmZqanY5"
-    ]
+    "sameAs": []
   };
 
   const faqSchema = {
@@ -259,10 +255,10 @@ export default function Home() {
               <div className="about-sec-2-left">
                 <div className="img-box1">
                   <div className="shape1 jump">
-                    <img src="/assets/img/about/about-2-right.jpg" alt="Indian Best Packers and Movers Jaipur Loading Operations" width="270" height="380" loading="lazy" />
+                    <img src="/assets/img/about/about-2-right.jpg" alt="Agarwal On Time Cargo Packers and Movers Loading Operations" width="270" height="380" loading="lazy" />
                   </div>
                   <div className="img2">
-                    <img className="tilt-active" src="/assets/img/about/about-2-main.jpg" alt="Indian Best Packers and Movers Jaipur Shifting Team" width="400" height="500" loading="lazy" />
+                    <img className="tilt-active" src="/assets/img/about/about-2-main.jpg" alt="Agarwal On Time Cargo Packers and Movers Shifting Team" width="400" height="500" loading="lazy" />
                   </div>
                   <div className="year-counter">
                     <div className="rotate-text">
@@ -270,7 +266,7 @@ export default function Home() {
                       <h4 className="year-counter_text-big">Experience</h4>
                     </div>
                     <div className="year-counter_number">
-                      <span className="counter-number">16</span>
+                      <span className="counter-number"><Counter end={16} /></span>
                     </div>
                   </div>
                 </div>
@@ -279,13 +275,12 @@ export default function Home() {
             <div className="col-xl-6">
               <div className="title-area">
                 <span className="sub-title before-none">About Us</span>
-                <h2 className="sec-title">Welcome to Indian Best Packers & Movers</h2>
+                <h2 className="sec-title">Welcome to Agarwal On Time Cargo Packers & Movers</h2>
                 <p className="sec-text">
                   The stressful moving is about moving your family along with belongings to a new place from its residing
                   location is really painful and wounding job correlated with several tasks packing, unpacking and moving
                   to be happened to the entire furnished house, is same to all sorts of stuff. The complete relocation
-                  task may distress and daunt goods’ owners. Complete peace of mind is provided by the Indian Best Packers
-                  & Movers in Jaipur. Relocation home or relocating office goods are all tensions-filled tasks and about to
+                  task may distress and daunt goodsâ€™ owners. Complete peace of mind is provided by the Agarwal On Time Cargo Packers & Movers in Bangalore. Relocation home or relocating office goods are all tensions-filled tasks and about to
                   handle all these will create an anxiety, as you are tempted to move it perfectly to the new and right
                   place.
                 </p>
@@ -323,7 +318,7 @@ export default function Home() {
             <div className="counter-card">
               <div className="media-body">
                 <div className="box-number">
-                  <span className="counter-number">4050</span>+
+                  <span className="counter-number"><Counter end={4050} /></span>+
                 </div>
                 <p className="box-text">Satisfied Customers</p>
               </div>
@@ -334,7 +329,7 @@ export default function Home() {
             <div className="counter-card">
               <div className="media-body">
                 <div className="box-number">
-                  <span className="counter-number">16</span>+
+                  <span className="counter-number"><Counter end={16} /></span>+
                 </div>
                 <p className="box-text">Our Staff</p>
               </div>
@@ -345,7 +340,7 @@ export default function Home() {
             <div className="counter-card">
               <div className="media-body">
                 <div className="box-number">
-                  <span className="counter-number">6060</span>+
+                  <span className="counter-number"><Counter end={6060} /></span>+
                 </div>
                 <p className="box-text">Total Customers</p>
               </div>
@@ -356,7 +351,7 @@ export default function Home() {
             <div className="counter-card">
               <div className="media-body">
                 <div className="box-number">
-                  <span className="counter-number">22</span>+
+                  <span className="counter-number"><Counter end={22} /></span>+
                 </div>
                 <p className="box-text">Our Vehicle</p>
               </div>
@@ -405,7 +400,7 @@ export default function Home() {
                 <div className="why-choose-1-right-card">
                   <div className="box-number">
                     <span className="number">
-                      <span className="counter-number">4.4</span>k
+                      <span className="counter-number"><Counter end={4.4} /></span>k
                     </span>
                     <span className="plus">+</span>
                   </div>
@@ -418,7 +413,7 @@ export default function Home() {
             <div className="col-xl-4 col-lg-8">
               <div className="why-img-box1">
                 <div className="img1">
-                  <img src="/img/why.gif" alt="Packers and Movers Jaipur Shifting Process Animation" width="460" height="400" loading="lazy" />
+                  <img src="/img/why.gif" alt="Packers and Movers Bangalore Shifting Process Animation" width="460" height="400" loading="lazy" />
                 </div>
               </div>
             </div>
@@ -442,7 +437,7 @@ export default function Home() {
                   <div className="choose-feature-wrap__content">
                     <h3 className="box-title">On-Time Services</h3>
                     <p className="box-text">
-                      We at Indian Best Packers & Movers aim to deliver goods on time or before time.
+                      We at Agarwal On Time Cargo Packers & Movers aim to deliver goods on time or before time.
                     </p>
                   </div>
                 </div>
@@ -479,7 +474,7 @@ export default function Home() {
                 <div className="col-12">
                   <div className="brand-1-top">
                     <h3 className="box-title">
-                      Trusted by over <span className="number text-theme">22+</span> companies in India
+                      Trusted by over <span className="number text-theme"><Counter end={22} />+</span> companies in India
                     </h3>
                   </div>
                 </div>
@@ -518,11 +513,11 @@ export default function Home() {
             <div className="col-xl-10 col-lg-10">
               <div className="title-area text-center">
                 <span className="sub-title justify-content-center">Best Packing Moving Services</span>
-                <h2 className="sec-title">Indian Best Packers & Movers - Jaipur</h2>
+                <h2 className="sec-title">Agarwal On Time Cargo Packers & Movers - Bangalore</h2>
               </div>
             </div>
             <p>
-              Indian Best Packers & Movers is a renowned packers and movers in Jaipur. With 16 years of experience in the
+              Agarwal On Time Cargo Packers & Movers is a renowned packers and movers in Bangalore. With 16 years of experience in the
               industry, we have established a strong reputation for our reliable and efficient moving services. Whether
               it&apos;s a house relocation services or a commercial move, we offer a comprehensive range of shifting services
               to cater to diverse moving needs. Our team of skilled professionals ensures the safe and secure packing of
@@ -534,24 +529,23 @@ export default function Home() {
               for goods in transit, giving customers peace of mind.
             </p>
             <p>
-              With a strong network of branches across Jaipur and a dedicated customer support team, Indian Best Packers &
-              Movers ensures a smooth and hassle-free moving experience. Our professionalism, reliability, and excellent
+              With a strong network of branches across Bangalore and a dedicated customer support team, Agarwal On Time Cargo Packers & Movers ensures a smooth and hassle-free moving experience. Our professionalism, reliability, and excellent
               track record make us a preferred choice for individuals and businesses seeking packers and movers services in
-              Jaipur.
+              Bangalore.
             </p>
           </div>
           <div className="dividepart">
             <div className="row">
               <div className="col-lg-8">
-                <h2>Indian Best Packers & Movers Charges in Jaipur | Affordable Packers and Movers in Jaipur</h2>
+                <h2>Agarwal On Time Cargo Packers & Movers Charges in Bangalore | Affordable Packers and Movers in Bangalore</h2>
                 <p>
-                  Indian Best Packers & Movers in Jaipur constantly upgrade their services to offer you an enhanced moving
+                  Agarwal On Time Cargo Packers & Movers in Bangalore constantly upgrade their services to offer you an enhanced moving
                   experience. With years of experience, extensive training, and the right tools and vehicles, you can
                   ensure that your belongings reach the new address in excellent condition and on time.
                   <br />
-                  With the advanced and state-of-the-art facilities offered by Indian Best Packers & Movers in Jaipur, we
+                  With the advanced and state-of-the-art facilities offered by Agarwal On Time Cargo Packers & Movers in Bangalore, we
                   have emerged as one of the sought-after options for anyone planning to relocate. Other than this,
-                  Indian Best Packers and Movers in Jaipur offer best-in-class and round-the-clock customer support to
+                  Agarwal On Time Cargo Packers and Movers in Bangalore offer best-in-class and round-the-clock customer support to
                   come up with immediate solutions to their queries.
                 </p>
                 <ul>
@@ -577,33 +571,33 @@ export default function Home() {
                     </tr>
                     <tr>
                       <td>1 BHK Shifting</td>
-                      <td>₹ 5000 - 7000</td>
-                      <td>₹ 3000 - 5000</td>
+                      <td>â‚¹ 5000 - 7000</td>
+                      <td>â‚¹ 3000 - 5000</td>
                     </tr>
                     <tr>
                       <td>2 BHK Shifting</td>
-                      <td>₹ 6000 - 8000</td>
-                      <td>₹ 4000 - 5000</td>
+                      <td>â‚¹ 6000 - 8000</td>
+                      <td>â‚¹ 4000 - 5000</td>
                     </tr>
                     <tr>
                       <td>3 BHK Shifting</td>
-                      <td>₹ 8000 - 12000</td>
-                      <td>₹ 5000 - 6000</td>
+                      <td>â‚¹ 8000 - 12000</td>
+                      <td>â‚¹ 5000 - 6000</td>
                     </tr>
                     <tr>
                       <td>Few Goods Shifting</td>
-                      <td>₹ 3500 - 5000</td>
-                      <td>₹ 2000 - 3000</td>
+                      <td>â‚¹ 3500 - 5000</td>
+                      <td>â‚¹ 2000 - 3000</td>
                     </tr>
                     <tr>
                       <td>Car Shifting</td>
-                      <td>₹ 3000 - 6000</td>
-                      <td>₹ 1000 - 3000</td>
+                      <td>â‚¹ 3000 - 6000</td>
+                      <td>â‚¹ 1000 - 3000</td>
                     </tr>
                     <tr>
                       <td>Bike Shifting</td>
-                      <td>₹ 2000 - 10000</td>
-                      <td>₹ 1000 - 2000</td>
+                      <td>â‚¹ 2000 - 10000</td>
+                      <td>â‚¹ 1000 - 2000</td>
                     </tr>
                   </tbody>
                 </table>
@@ -611,246 +605,35 @@ export default function Home() {
               <div className="col-lg-4">
                 <div className="scrolligpart">
                   <h3>
-                    <span className="clrbl">We&apos;re Available in These Areas in Jaipur</span>
+                    <span className="clrbl">We&apos;re Available in These Areas in Bangalore</span>
                   </h3>
                   <div className="navbg2">
                     <ul className="nav nav-list">
-                      <li>
-                        <Link href="/packers-and-movers-jagatpura-jaipur.html"> Packers And Movers in Jagtpura Jaipur </Link>
-                      </li>
-                      <li>
-                        <Link href="/packers-and-movers-kalwar-road-jaipur.html"> Packers And Movers in Kalwar Road Jaipur</Link>
-                      </li>
-                      <li>
-                        <Link href="/packers-and-movers-civil-lines-jaipur.html"> Packers And Movers in Civil Lines Jaipur</Link>
-                      </li>
-                      <li>
-                        <Link href="/packers-and-movers-c-scheme-jaipur.html"> Packers And Movers in C-Scheme Jaipur</Link>
-                      </li>
-                      <li>
-                        <Link href="/packers-and-movers-malviya-nagar-jaipur.html"> Packers And Movers in Malviya Nagar Jaipur</Link>
-                      </li>
-                      <li>
-                        <Link href="/packers-and-movers-vaishali-jaipur.html"> Packers And Movers in Vaishali Jaipur</Link>
-                      </li>
-                      <li>
-                        <Link href="/packers-and-movers-ajmer-road-jaipur.html"> Packers And Movers in Ajmer Road Jaipur</Link>
-                      </li>
-                      <li>
-                        <Link href="/packers-and-movers-jhotwara-jaipur.html"> Packers And Movers in Jhotwara Jaipur</Link>
-                      </li>
-                      <li>
-                        <Link href="/packers-and-movers-tonk-road-jaipur.html"> Packers And Movers in Tonk Road Jaipur</Link>
-                      </li>
-                      <li>
-                        <Link href="/packers-and-movers-mansarovar-jaipur.html"> Packers And Movers in Mansarovar Jaipur</Link>
-                      </li>
-                      <li>
-                        <Link href="/packers-and-movers-pratap-nagar-jaipur.html"> Packers And Movers in Pratap nagar Jaipur</Link>
-                      </li>
-                      <li>
-                        <Link href="/packers-and-movers-sanganer-jaipur.html"> Packers And Movers in Sanganer Jaipur</Link>
-                      </li>
-                      <li>
-                        <Link href="/packers-and-movers-tilaknagar-jaipur.html"> Packers And Movers in Tilaknagar Jaipur</Link>
-                      </li>
-                      <li>
-                        <Link href="/packers-and-movers-raja-park-jaipur.html"> Packers And Movers in Raja Park Jaipur</Link>
-                      </li>
-                      <li>
-                        <Link href="/packers-and-movers-chitrakut-jaipur.html"> Packers And Movers in Chitrakut Jaipur</Link>
-                      </li>
-                      <li>
-                        <Link href="/packers-and-movers-patrakar-colony-jaipur.html"> Packers And Movers in Patrakar Colony Jaipur</Link>
-                      </li>
-                      <li>
-                        <Link href="/packers-and-movers-mahapura-jaipur.html"> Packers And Movers in Mahapura Jaipur</Link>
-                      </li>
-                      <li>
-                        <Link href="/packers-and-movers-bhakrota-jaipur.html"> Packers And Movers in Bhakrota Jaipur</Link>
-                      </li>
-                      <li>
-                        <Link href="/packers-and-movers-bagru-jaipur.html"> Packers And Movers in Bagru Jaipur</Link>
-                      </li>
-                      <li>
-                        <Link href="/packers-and-movers-vidhyadhar-nagar-jaipur.html"> Packers And Movers in Vidyadhar Nagar Jaipur</Link>
-                      </li>
-                      <li>
-                        <Link href="/packers-and-movers-bani-park-jaipur.html"> Packers And Movers in Bani park Jaipur</Link>
-                      </li>
-                      <li>
-                        <Link href="/packers-and-movers-hirapura-jaipur.html"> Packers And Movers in hirapura Jaipur</Link>
-                      </li>
-                      <li>
-                        <Link href="/packers-and-movers-kanakpura-jaipur.html"> Packers And Movers in kanakpura Jaipur</Link>
-                      </li>
-                      <li>
-                        <Link href="/packers-and-movers-panchyawala-jaipur.html"> Packers And Movers in Panchyawala Jaipur</Link>
-                      </li>
+                      {locationsList
+                        .filter((loc) => loc.region === "Bangalore" && !loc.type)
+                        .map((loc, idx) => (
+                          <li key={idx}>
+                            <Link href={`/${loc.slug}.html`}> Packers And Movers in {loc.name}</Link>
+                          </li>
+                        ))}
                     </ul>
                   </div>
 
                   <h3>
-                    <span className="clrbl">Service Area Rajasthan </span>
+                    <span className="clrbl">Service Area Karnataka</span>
                   </h3>
                   <div className="navbg2">
                     <ul className="nav nav-list">
                       <li>
-                        <a href="#"> Packers And Movers in Rajasthan</a>
+                        <Link href="#"> Packers And Movers in Karnataka</Link>
                       </li>
-                      <li>
-                        <Link href="/packers-and-movers-ajmer.html"> Packers And Movers in Ajmer</Link>
-                      </li>
-                      <li>
-                        <Link href="/packers-and-movers-alwar.html"> Packers And Movers in Alwar</Link>
-                      </li>
-                      <li>
-                        <Link href="/packers-and-movers-bayana.html"> Packers And Movers in Bayana</Link>
-                      </li>
-                      <li>
-                        <Link href="/packers-and-movers-abu-road.html"> Packers and Movers Abu Road </Link>
-                      </li>
-                      <li>
-                        <Link href="/packers-and-movers-bharatpur.html"> Packers And Movers in Bharatpur</Link>
-                      </li>
-                      <li>
-                        <Link href="/packers-and-movers-bhiwadi.html"> Packers And Movers in Bhiwadi</Link>
-                      </li>
-                      <li>
-                        <Link href="/packers-and-movers-bhilwara.html"> Packers And Movers in Bhilwara</Link>
-                      </li>
-                      <li>
-                        <Link href="/packers-and-movers-bikaner.html"> Packers And Movers in Bikaner</Link>
-                      </li>
-                      <li>
-                        <Link href="/packers-and-movers-chittaurgarh.html"> Packers And Movers in Chittaurgarh</Link>
-                      </li>
-                      <li>
-                        <Link href="/packers-and-movers-churu.html"> Packers And Movers in Churu</Link>
-                      </li>
-                      <li>
-                        <Link href="/packers-and-movers-dausa.html"> Packers And Movers in Dausa</Link>
-                      </li>
-                      <li>
-                        <Link href="/packers-and-movers-ganganagar.html"> Packers And Movers in Ganganagar</Link>
-                      </li>
-                      <li>
-                        <Link href="/packers-and-movers-hindaun.html"> Packers And Movers in Hindaun</Link>
-                      </li>
-                      <li>
-                        <Link href="/packers-and-movers-jaipur.html"> Packers And Movers in Jaipur</Link>
-                      </li>
-                      <li>
-                        <Link href="/packers-and-movers-jaisalmer.html"> Packers And Movers in Jaisalmer</Link>
-                      </li>
-                      <li>
-                        <Link href="/packers-and-movers-jalore.html"> Packers And Movers in Jalore</Link>
-                      </li>
-                      <li>
-                        <Link href="/packers-and-movers-jhunjhunu.html"> Packers And Movers in Jhunjhunu</Link>
-                      </li>
-                      <li>
-                        <Link href="/packers-and-movers-jhalawar.html"> Packers And Movers in Jhalawar</Link>
-                      </li>
-                      <li>
-                        <Link href="/packers-and-movers-jodhpur.html"> Packers And Movers in Jodhpur</Link>
-                      </li>
-                      <li>
-                        <Link href="/packers-and-movers-karauli.html"> Packers And Movers in Karauli</Link>
-                      </li>
-                      <li>
-                        <Link href="/packers-and-movers-kishangarh.html"> Packers And Movers in Kishangarh</Link>
-                      </li>
-                      <li>
-                        <Link href="/packers-and-movers-kota.html"> Packers And Movers in Kota</Link>
-                      </li>
-                      <li>
-                        <Link href="/packers-and-movers-kotputli.html"> Packers And Movers in Kotputli</Link>
-                      </li>
-                      <li>
-                        <Link href="/packers-and-movers-kuchaman.html"> Packers And Movers in Kuchaman</Link>
-                      </li>
-                      <li>
-                        <Link href="/packers-and-movers-naraina.html"> Packers And Movers in Naraina</Link>
-                      </li>
-                      <li>
-                        <Link href="/packers-and-movers-neem-ka-thana.html"> Packers And Movers in Neem ka Thana</Link>
-                      </li>
-                      <li>
-                        <Link href="/packers-and-movers-niwai.html"> Packers And Movers in Niwai</Link>
-                      </li>
-                      <li>
-                        <Link href="/packers-and-movers-nagaur.html"> Packers And Movers in nagaur</Link>
-                      </li>
-                      <li>
-                        <Link href="/packers-and-movers-nathdwara.html"> Packers And Movers in Nathdwara</Link>
-                      </li>
-                      <li>
-                        <Link href="/packers-and-movers-pilani.html"> Packers And Movers in Pilani</Link>
-                      </li>
-                      <li>
-                        <Link href="/packers-and-movers-pratapgarh.html"> Packers And Movers in Pratapgarh</Link>
-                      </li>
-                      <li>
-                        <Link href="/packers-and-movers-pushkar.html"> Packers And Movers in Pushkar</Link>
-                      </li>
-                      <li>
-                        <Link href="/packers-and-movers-pali.html"> Packers And Movers in Pali</Link>
-                      </li>
-                      <li>
-                        <Link href="/packers-and-movers-ratangarh.html"> Packers And Movers in Ratangarh</Link>
-                      </li>
-                      <li>
-                        <Link href="/packers-and-movers-ramgarh.html"> Packers And Movers in Ramgarh</Link>
-                      </li>
-                      <li>
-                        <Link href="/packers-and-movers-sawai-madhopur.html"> Packers And Movers in Sawai Madhopur</Link>
-                      </li>
-                      <li>
-                        <Link href="/packers-and-movers-shahpura.html"> Packers And Movers in Shahpura</Link>
-                      </li>
-                      <li>
-                        <Link href="/packers-and-movers-sirohi.html"> Packers and Movers Sirohi</Link>
-                      </li>
-                      <li>
-                        <Link href="/packers-and-movers-sri-madhopur.html"> Packers And Movers in Sri Madhopur</Link>
-                      </li>
-                      <li>
-                        <Link href="/packers-and-movers-sikar.html"> Packers And Movers in Sikar</Link>
-                      </li>
-                      <li>
-                        <Link href="/packers-and-movers-sujangarh.html"> Packers And Movers in Sujangarh</Link>
-                      </li>
-                      <li>
-                        <Link href="/packers-and-movers-tonk.html"> Packers And Movers in Tonk</Link>
-                      </li>
-                      <li>
-                        <Link href="/packers-and-movers-udaipur.html"> Packers And Movers in Udaipur</Link>
-                      </li>
-                      <li>
-                        <Link href="/packers-and-movers-abu.html"> Packers And Movers in Abu</Link>
-                      </li>
-                      <li>
-                        <Link href="/packers-and-movers-aklera.html"> Packers And Movers in Aklera</Link>
-                      </li>
-                      <li>
-                        <Link href="/packers-and-movers-basi.html"> Packers And Movers in Basi</Link>
-                      </li>
-                      <li>
-                        <Link href="/packers-and-movers-behror.html"> Packers And Movers in Behror</Link>
-                      </li>
-                      <li>
-                        <Link href="/packers-and-movers-bhadasar.html"> Packers And Movers in Bhadasar</Link>
-                      </li>
-                      <li>
-                        <Link href="/packers-and-movers-deoli.html"> Packers And Movers in Deoli</Link>
-                      </li>
-                      <li>
-                        <Link href="/packers-and-movers-dhaulpur.html"> Packers And Movers in Dhaulpur</Link>
-                      </li>
-                      <li>
-                        <Link href="/packers-and-movers-hanumangarh.html"> Packers And Movers in Hanumangarh</Link>
-                      </li>
+                      {locationsList
+                        .filter((loc) => loc.region === "Karnataka")
+                        .map((loc, idx) => (
+                          <li key={idx}>
+                            <Link href={`/${loc.slug}.html`}> Packers And Movers in {loc.name}</Link>
+                          </li>
+                        ))}
                     </ul>
                   </div>
                 </div>
@@ -999,17 +782,17 @@ export default function Home() {
           <div className="row">
             <div className="col-md-4">
               <h5>
-                <Link href="/car-transport-jaipur.html"> Car Transport Jaipur</Link>
+                <Link href="/car-transport-bangalore.html"> Car Transport Bangalore</Link>
               </h5>
             </div>
             <div className="col-md-4">
               <h5 className="colorchange">
-                <Link href="/packers-and-movers-jaipur.html"> Packers and Movers Jaipur</Link>
+                <Link href="/packers-and-movers-bangalore.html"> Packers and Movers Bangalore</Link>
               </h5>
             </div>
             <div className="col-md-4">
               <h5>
-                <Link href="/bike-transport-jaipur.html"> Bike Transport Jaipur</Link>
+                <Link href="/bike-transport-bangalore.html"> Bike Transport Bangalore</Link>
               </h5>
             </div>
           </div>
@@ -1080,7 +863,7 @@ export default function Home() {
                 </li>
                 <li>
                   <i className="fas fa-location-dot"></i>
-                  <Link href="/packers-and-movers-jaipur.html">Packers and Movers Jaipur</Link>
+                  <Link href="/packers-and-movers-mangalore.html">Packers and Movers Mangalore</Link>
                 </li>
                 <li>
                   <i className="fas fa-location-dot"></i>
@@ -1104,7 +887,7 @@ export default function Home() {
                 </li>
                 <li>
                   <i className="fas fa-location-dot"></i>
-                  <Link href="/packers-and-movers-jodhpur.html">Packers and Movers Jodhpur</Link>
+                  <Link href="/packers-and-movers-belgaum.html">Packers and Movers Belgaum</Link>
                 </li>
                 <li>
                   <i className="fas fa-location-dot"></i>
@@ -1152,7 +935,7 @@ export default function Home() {
                 </li>
                 <li>
                   <i className="fas fa-location-dot"></i>
-                  <Link href="/packers-and-movers-kota.html">Packers and Movers Kota</Link>
+                  <Link href="/packers-and-movers-hubli.html">Packers and Movers Hubli</Link>
                 </li>
                 <li>
                   <i className="fas fa-location-dot"></i>
@@ -1176,3 +959,4 @@ export default function Home() {
     </>
   );
 }
+

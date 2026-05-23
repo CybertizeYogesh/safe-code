@@ -1,14 +1,14 @@
-import React from "react";
+﻿import React from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import Sidebar from "@/components/Sidebar";
 
 export const metadata = {
-  title: "Air Cargo | Indian Best Packers & Movers",
+  title: "Air Cargo | Agarwal On Time Cargo Packers & Movers",
   description: "Fast, reliable, and cost-effective air cargo solutions in India. Urgent shipment transit with complete customs clearance assistance.",
   alternates: {
-    canonical: "https://www.indianbestpackersmovers.com/air.html",
+    canonical: "https://www.agarwalontimecargopackers.com/air.html",
   },
 };
 
@@ -20,11 +20,11 @@ export default function AirCargo() {
     "description": "Fast, reliable, and cost-effective air cargo solutions in India. Urgent shipment transit with complete customs clearance assistance.",
     "provider": {
       "@type": "LocalBusiness",
-      "name": "Indian Best Packers & Movers",
-      "image": "https://www.indianbestpackersmovers.com/assets/img/logo.png",
-      "telephone": "+91 8005746241",
-      "email": "info@indianbestpackersmovers.com",
-      "url": "https://www.indianbestpackersmovers.com"
+      "name": "Agarwal On Time Cargo Packers & Movers",
+      "image": "https://www.agarwalontimecargopackers.com/assets/img/logo.png",
+      "telephone": "+91 8095279595",
+      "email": "agarwalpackersmoversa@gmail.com",
+      "url": "https://www.agarwalontimecargopackers.com"
     },
     "areaServed": "India"
   };
@@ -46,7 +46,7 @@ export default function AirCargo() {
                 <div className="page-content">
                   <h2 className="sec-title page-title">Air Cargo Services</h2>
                   <p>
-                    Indian Best Packers & Movers offers our clients a cost-effective, secure, timely, and efficient solution for high-value or urgent shipments via air cargo. We maintain partnerships with major domestic airlines to guarantee priority booking space for your packages.
+                    Agarwal On Time Cargo Packers & Movers offers our clients a cost-effective, secure, timely, and efficient solution for high-value or urgent shipments via air cargo. We maintain partnerships with major domestic airlines to guarantee priority booking space for your packages.
                   </p>
                   <p>
                     From express document shipments to heavy weight commercial machinery parts, our air cargo division handles packaging, airport custom clearances, door-to-door or door-to-airport freight forwarding seamlessly.
@@ -108,3 +108,4 @@ export default function AirCargo() {
     </>
   );
 }
+

@@ -1,13 +1,13 @@
-import React from "react";
+﻿import React from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 
 export const metadata = {
-  title: "Payment Methods | Indian Best Packers & Movers",
-  description: "Bank details and payment instructions for Indian Best Packers & Movers. Transfer funds securely via NEFT, RTGS, IMPS, or UPI QR code.",
+  title: "Payment Methods | Agarwal On Time Cargo Packers & Movers",
+  description: "Bank details and payment instructions for Agarwal On Time Cargo Packers & Movers. Transfer funds securely via NEFT, RTGS, IMPS, or UPI QR code.",
   alternates: {
-    canonical: "https://www.indianbestpackersmovers.com/payment.html",
+    canonical: "https://www.agarwalontimecargopackers.com/payment.html",
   },
 };
 
@@ -34,11 +34,11 @@ export default function Payment() {
                   <tbody>
                     <tr>
                       <td style={{ fontWeight: "700", color: "#1f1f1f", width: "40%" }}>Beneficiary Name</td>
-                      <td style={{ color: "#666" }}>Indian Best Packers & Movers</td>
+                      <td style={{ color: "#666" }}>Agarwal On Time Cargo Packers & Movers</td>
                     </tr>
                     <tr>
                       <td style={{ fontWeight: "700", color: "#1f1f1f" }}>Account Number</td>
-                      <td style={{ color: "#c4170d", fontWeight: "700" }}>50200056982463</td>
+                      <td style={{ color: "#F26B25", fontWeight: "700" }}>50200056982463</td>
                     </tr>
                     <tr>
                       <td style={{ fontWeight: "700", color: "#1f1f1f" }}>Bank Name</td>
@@ -50,7 +50,7 @@ export default function Payment() {
                     </tr>
                     <tr>
                       <td style={{ fontWeight: "700", color: "#1f1f1f" }}>Branch</td>
-                      <td style={{ color: "#666" }}>Ajmer Road Branch, Jaipur</td>
+                      <td style={{ color: "#666" }}>Marathahalli Branch, Bangalore</td>
                     </tr>
                     <tr>
                       <td style={{ fontWeight: "700", color: "#1f1f1f" }}>Account Type</td>
@@ -73,21 +73,21 @@ export default function Payment() {
                     {/* Top-left marker */}
                     <rect x="12" y="12" width="22" height="22" fill="#1f1f1f" />
                     <rect x="16" y="16" width="14" height="14" fill="#fff" />
-                    <rect x="20" y="20" width="6" height="6" fill="#c4170d" />
+                    <rect x="20" y="20" width="6" height="6" fill="#F26B25" />
                     {/* Top-right marker */}
                     <rect x="66" y="12" width="22" height="22" fill="#1f1f1f" />
                     <rect x="70" y="16" width="14" height="14" fill="#fff" />
-                    <rect x="74" y="20" width="6" height="6" fill="#c4170d" />
+                    <rect x="74" y="20" width="6" height="6" fill="#F26B25" />
                     {/* Bottom-left marker */}
                     <rect x="12" y="66" width="22" height="22" fill="#1f1f1f" />
                     <rect x="16" y="70" width="14" height="14" fill="#fff" />
-                    <rect x="20" y="74" width="6" height="6" fill="#c4170d" />
+                    <rect x="20" y="74" width="6" height="6" fill="#F26B25" />
                     {/* QR Code bits */}
                     <rect x="42" y="15" width="6" height="6" fill="#1f1f1f" />
                     <rect x="50" y="25" width="8" height="6" fill="#1f1f1f" />
                     <rect x="42" y="38" width="12" height="6" fill="#1f1f1f" />
                     <rect x="58" y="38" width="6" height="12" fill="#1f1f1f" />
-                    <rect x="42" y="50" width="6" height="12" fill="#c4170d" />
+                    <rect x="42" y="50" width="6" height="12" fill="#F26B25" />
                     <rect x="50" y="60" width="10" height="8" fill="#1f1f1f" />
                     <rect x="68" y="50" width="8" height="8" fill="#1f1f1f" />
                     <rect x="78" y="58" width="8" height="6" fill="#1f1f1f" />
@@ -96,7 +96,7 @@ export default function Payment() {
                     <rect x="42" y="78" width="14" height="6" fill="#1f1f1f" />
                   </svg>
                 </div>
-                <div style={{ fontWeight: "700", color: "#1f1f1f", fontSize: "16px" }}>UPI ID: indianbest@hdfcbank</div>
+                <div style={{ fontWeight: "700", color: "#1f1f1f", fontSize: "16px" }}>UPI ID: agarwalontime@hdfcbank</div>
               </div>
             </div>
           </div>
@@ -107,3 +107,4 @@ export default function Payment() {
     </>
   );
 }
+

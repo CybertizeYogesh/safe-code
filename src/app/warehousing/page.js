@@ -1,14 +1,14 @@
-import React from "react";
+﻿import React from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import Sidebar from "@/components/Sidebar";
 
 export const metadata = {
-  title: "Warehousing Services | Indian Best Packers & Movers",
-  description: "Secure, moisture-free, and CCTV monitored warehousing and goods storage services. Short-term and long-term household storage in India.",
+  title: "Household Shifting Services & Storage | Warehousing Bangalore",
+  description: "Secure warehousing and household storage services in Bangalore. Safe, climate-controlled, and insured storage facilities for short and long-term needs.",
   alternates: {
-    canonical: "https://www.indianbestpackersmovers.com/warehousing.html",
+    canonical: "https://www.agarwalontimecargopackers.com/warehousing.html",
   },
 };
 
@@ -20,11 +20,11 @@ export default function Warehousing() {
     "description": "Secure, moisture-free, and CCTV monitored warehousing and goods storage services. Short-term and long-term household storage in India.",
     "provider": {
       "@type": "LocalBusiness",
-      "name": "Indian Best Packers & Movers",
-      "image": "https://www.indianbestpackersmovers.com/assets/img/logo.png",
-      "telephone": "+91 8005746241",
-      "email": "info@indianbestpackersmovers.com",
-      "url": "https://www.indianbestpackersmovers.com"
+      "name": "Agarwal On Time Cargo Packers & Movers",
+      "image": "https://www.agarwalontimecargopackers.com/assets/img/logo.png",
+      "telephone": "+91 8095279595",
+      "email": "agarwalpackersmoversa@gmail.com",
+      "url": "https://www.agarwalontimecargopackers.com"
     },
     "areaServed": "India"
   };
@@ -108,3 +108,4 @@ export default function Warehousing() {
     </>
   );
 }
+

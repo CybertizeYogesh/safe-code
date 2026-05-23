@@ -102,3 +102,23 @@ body {
     transform: translateY(-5px);
   }
 }
+
+/* Reposition footer decorative shapes to empty spaces to avoid overlapping content */
+.footer-wrapper .footer-shape-1 {
+  top: auto !important;
+  bottom: 8% !important;
+  left: 1.5% !important;
+}
+
+.footer-wrapper .footer-shape-2 {
+  right: 15% !important;
+  bottom: 5% !important;
+}
+
+@media (max-width: 1600px) {
+  .footer-wrapper .footer-shape-1 {
+    top: auto !important;
+    bottom: 8% !important;
+    left: 0.5% !important;
+  }
+}

@@ -1,7 +1,7 @@
-import { locationsList } from "@/data/locations";
+﻿import { locationsList } from "@/data/locations";
 
 export default function sitemap() {
-  const baseUrl = "https://www.indianbestpackersmovers.com";
+  const baseUrl = "https://www.agarwalontimecargopackers.com";
 
   // Core pages
   const corePaths = [
@@ -40,3 +40,4 @@ export default function sitemap() {
 
   return [...coreUrls, ...locationUrls];
 }
+

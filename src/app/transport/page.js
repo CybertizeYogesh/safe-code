@@ -1,14 +1,14 @@
-import React from "react";
+﻿import React from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import Sidebar from "@/components/Sidebar";
 
 export const metadata = {
-  title: "Land Transport | Indian Best Packers & Movers",
-  description: "Secure and timely road transport services across India. Containerized trucks, open trucks, and light vehicles for smooth consignment delivery.",
+  title: "Local Packers and Movers Near Me | Land Transport Bangalore",
+  description: "Need local packers and movers near me? Our land transport division offers reliable truck shifting and logistics services in Bangalore and Karnataka.",
   alternates: {
-    canonical: "https://www.indianbestpackersmovers.com/transport.html",
+    canonical: "https://www.agarwalontimecargopackers.com/transport.html",
   },
 };
 
@@ -20,11 +20,11 @@ export default function LandTransport() {
     "description": "Secure and timely road transport services across India. Containerized trucks, open trucks, and light vehicles for smooth consignment delivery.",
     "provider": {
       "@type": "LocalBusiness",
-      "name": "Indian Best Packers & Movers",
-      "image": "https://www.indianbestpackersmovers.com/assets/img/logo.png",
-      "telephone": "+91 8005746241",
-      "email": "info@indianbestpackersmovers.com",
-      "url": "https://www.indianbestpackersmovers.com"
+      "name": "Agarwal On Time Cargo Packers & Movers",
+      "image": "https://www.agarwalontimecargopackers.com/assets/img/logo.png",
+      "telephone": "+91 8095279595",
+      "email": "agarwalpackersmoversa@gmail.com",
+      "url": "https://www.agarwalontimecargopackers.com"
     },
     "areaServed": "India"
   };
@@ -111,3 +111,4 @@ export default function LandTransport() {
     </>
   );
 }
+

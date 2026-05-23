@@ -76,9 +76,10 @@ export default function Navbar() {
             <Link href="/" onClick={closeMobileMenu}>
               <img
                 src="/assets/img/logo.png"
-                alt="Indian Best Packers and Movers Logo"
+                alt="Agarwal On Time Cargo Packers and Movers Logo"
                 width="160"
-                height="52"
+                height="48"
+                style={{ width: "160px", height: "auto" }}
                 loading="lazy"
               />
             </Link>
@@ -127,12 +128,12 @@ export default function Navbar() {
                 <div className="header-links">
                   <ul>
                     <li className="hphone">
-                      <i className="fa-regular fa-phone"></i>{" "}
-                      <a href="tel:8005746241">+91 8005746241</a> / <a href="tel:8094273586">8094273586</a>
+                      <i className="fas fa-phone"></i>{" "}
+                      <a href="tel:8095279595">+91 8095279595</a>
                     </li>
                     <li className="hmail">
-                      <i className="fa-sharp fa-regular fa-envelope"></i>{" "}
-                      <a href="mailto:info@indianbestpackersmovers.com">info@indianbestpackersmovers.com</a>
+                      <i className="fas fa-envelope"></i>{" "}
+                      <a href="mailto:agarwalpackersmoversa@gmail.com">agarwalpackersmoversa@gmail.com</a>
                     </li>
                     <li className="gstno">
                       <b>GSTIN : </b>08BXTPS9821C1ZV
@@ -148,19 +149,19 @@ export default function Navbar() {
                   <ul>
                     <li>
                       <div className="social-links">
-                        <a href="https://www.facebook.com/indianbestpackers" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                           <i className="fab fa-facebook"></i>
                         </a>
-                        <a href="https://www.instagram.com/indianbestpackersinjaipur/?igsh=cm81OThqZmZqanY5" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                           <i className="fab fa-instagram"></i>
                         </a>
-                        <a href="https://www.linkedin.com/authwall?trk=bf&amp;trkInfo=AQHv0yheWL0pVgAAAY2NtlfQIxAvMxotlDAJWRG8K9LjLDWfzi_8uYx_pIbn7L2upstBJvnGE780XlOfXXcHLBpADEDKVHI-qg6K_5nRnKcSoiuQVYaqFSMFuXEVG2cC61N4E34=&amp;original_referer=&amp;sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Findian-best-packers-and-movers-jaipur-4b002b219%3Futm_source%3Dshare%26utm_campaign%3Dshare_via%26utm_content%3Dprofile%26utm_medium%3Dandroid_app" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                           <i className="fab fa-linkedin"></i>
                         </a>
-                        <a href="https://youtube.com/@packersandmoversinjaipur9686?si=yUEdf5y6mY6eWQv7" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
                           <i className="fab fa-youtube"></i>
                         </a>
-                        <a href="https://x.com/Pramod67075947?t=vztkl5zRL_5T9rd6a3XPlQ&s=09" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
                           <i className="fab fa-twitter"></i>
                         </a>
                       </div>
@@ -182,9 +183,10 @@ export default function Navbar() {
                     <Link href="/">
                       <img
                         src="/assets/img/logo.png"
-                        alt="Indian Best Packers and Movers Logo"
+                        alt="Agarwal On Time Cargo Packers and Movers Logo"
                         width="160"
-                        height="52"
+                        height="48"
+                        style={{ width: "160px", height: "auto" }}
                         loading="lazy"
                       />
                     </Link>
@@ -233,7 +235,7 @@ export default function Navbar() {
                 </div>
                 <div className="col-auto d-none d-xl-block">
                   <div className="header-button">
-                    <Link href="/contact.html" className="th-btn star-btn bg-theme2 text-title shadow-none">
+                    <Link href="/contact.html" className="th-btn star-btn bg-theme2 text-white shadow-none">
                       Get A Quote
                     </Link>
                   </div>

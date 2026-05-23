@@ -1,8 +1,8 @@
-import React from "react";
+﻿import React from "react";
 import Link from "next/link";
 
 export default function Breadcrumb({ title, canonicalUrl }) {
-  const currentUrl = canonicalUrl || `https://www.indianbestpackersmovers.com/${title.toLowerCase().replace(/[^a-z0-9]+/g, "-")}.html`;
+  const currentUrl = canonicalUrl || `https://www.agarwalontimecargopackers.com/${title.toLowerCase().replace(/[^a-z0-9]+/g, "-")}.html`;
   
   const schemaJson = {
     "@context": "https://schema.org",
@@ -12,7 +12,7 @@ export default function Breadcrumb({ title, canonicalUrl }) {
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://www.indianbestpackersmovers.com"
+        "item": "https://www.agarwalontimecargopackers.com"
       },
       {
         "@type": "ListItem",
@@ -31,7 +31,13 @@ export default function Breadcrumb({ title, canonicalUrl }) {
       />
       <div
         className="breadcumb-wrapper"
-        style={{ backgroundImage: "url('/assets/img/bg/breadcrumb-bg.jpg')" }}
+        data-bg-src="/assets/img/bg/breadcrumb-bg.jpg"
+        style={{
+          backgroundImage: "url('/assets/img/bg/breadcrumb-bg.jpg')",
+          backgroundSize: "cover",
+          backgroundPosition: "center center",
+          backgroundRepeat: "no-repeat"
+        }}
       >
         <div className="breadcrumb-bottom-shape">
           <img src="/assets/img/bg/breadcrumb-bottom.png" alt="" width="1920" height="80" loading="lazy" />
@@ -57,3 +63,4 @@ export default function Breadcrumb({ title, canonicalUrl }) {
     </>
   );
 }
+

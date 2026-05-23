@@ -1,14 +1,14 @@
 @use "sass:math";
 :root {
-  --theme-color: #c4170d;
-  --theme-color2: #ffc702;
-  --theme-color3: #8cc63f;
-  --title-color: #1f1f1f;
+  --theme-color: #F26B25;
+  --theme-color2: #041D54;
+  --theme-color3: #041D54;
+  --title-color: #041D54;
   --body-color: #797e88;
   --smoke-color: #f7f7f7;
   --smoke-color2: #f6f6f6;
   --black-color: #000000;
-  --black-color2: #080e1c;
+  --black-color2: #021133;
   --gray-color: #bdbdbd;
   --white-color: #ffffff;
   --light-color: #bdbdbd;
@@ -16,7 +16,7 @@
   --success-color: #28a745;
   --error-color: #dc3545;
   --th-border-color: #d8dde1;
-  --dark-color: #021526;
+  --dark-color: #041D54;
   --title-font: "DM Sans", sans-serif;
   --body-font: "DM Sans", sans-serif;
   --icon-font: "Font Awesome 6 Pro";
@@ -1721,7 +1721,7 @@ textarea.is-invalid {
   font-weight: 700;
   font-family: var(--title-font);
   letter-spacing: 4px;
-  color: #c4170d;
+  color: var(--theme-color);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1751,7 +1751,7 @@ textarea.is-invalid {
   content: "";
   height: 2px;
   width: 60px;
-  background: #c4170d;
+  background: var(--theme-color);
   display: inline-block;
 }
 @media (max-width: 375px) {
@@ -2589,7 +2589,7 @@ a.text-theme:hover,
   background-color: var(--black-color);
 }
 [data-overlay="overlay1"]:before {
-  background-color: #080e1c;
+  background-color: var(--theme-color2);
 }
 [data-opacity="1"]:before {
   opacity: 0.1;
@@ -4411,7 +4411,7 @@ ol.wp-block-rss {
   -webkit-transform: rotate(-41deg);
   -ms-transform: rotate(-41deg);
   transform: rotate(-41deg);
-  color: var(--theme-color2);
+  color: var(--theme-color);
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
@@ -4421,14 +4421,14 @@ ol.wp-block-rss {
 .footer-widget.widget_categories a:hover,
 .footer-widget.widget_nav_menu a:hover {
   background-color: transparent;
-  color: var(--theme-color2);
+  color: var(--theme-color);
 }
 .footer-widget.widget_meta a:hover:before,
 .footer-widget.widget_pages a:hover:before,
 .footer-widget.widget_archive a:hover:before,
 .footer-widget.widget_categories a:hover:before,
 .footer-widget.widget_nav_menu a:hover:before {
-  color: var(--theme-color2);
+  color: var(--theme-color);
   -webkit-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   transform: rotate(0deg);
@@ -4920,7 +4920,7 @@ ol.wp-block-rss {
   --body-color: #fff;
 }
 .header-top a:hover {
-  color: var(--theme-color2);
+  color: var(--theme-color);
 }
 .header-default {
   background: var(--white-color);
@@ -4933,7 +4933,7 @@ ol.wp-block-rss {
   position: relative;
   padding: 11px 0;
   --body-color: #fff;
-  background-color: #c4170d;
+  background-color: var(--theme-color2);
   border-radius: 0 0 57px 57px;
   max-width: 1620px;
   margin: 0 auto;
@@ -6066,15 +6066,15 @@ ol.wp-block-rss {
 }
 .footer-layout1 .copyright-wrap {
   padding: 12px 0;
-  background-color: #c4170d;
+  background-color: var(--theme-color2);
 }
 .footer-layout1 .th-social a {
   border-radius: 50%;
   background: transparent;
 }
 .footer-layout1 .th-social a:hover {
-  background-color: var(--theme-color2);
-  color: var(--title-color);
+  background-color: var(--theme-color);
+  color: var(--white-color);
 }
 .footer-layout1 .th-widget-about .about-bottom-title {
   font-size: 20px;
@@ -6106,7 +6106,10 @@ ol.wp-block-rss {
   color: var(--white-color);
 }
 .footer-layout1 .copyright-wrap .copyright-text a {
-  color: var(--theme-color2);
+  color: var(--theme-color);
+}
+.footer-layout1 .copyright-wrap .copyright-text a:hover {
+  color: var(--white-color);
 }
 .footer-layout2 {
   --body-color: #b5b5b5;
@@ -6216,7 +6219,7 @@ ol.wp-block-rss {
   color: var(--white-color);
 }
 .info-box_link:hover {
-  color: var(--theme-color2);
+  color: var(--theme-color);
 }
 .footer-top-newsletter {
   background-color: var(--smoke-color2);
@@ -7914,9 +7917,50 @@ ul.comment-list:has(> .th-comment-item ~ .th-comment-item):first-child
 .hero-2 {
   overflow: hidden;
 }
+.hero-slider2 {
+  height: 650px;
+}
+@media (max-width: 1399px) {
+  .hero-slider2 {
+    height: 600px;
+  }
+}
+@media (max-width: 1199px) {
+  .hero-slider2 {
+    height: 550px;
+  }
+}
+@media (max-width: 991px) {
+  .hero-slider2 {
+    height: 500px;
+  }
+}
+@media (max-width: 767px) {
+  .hero-slider2 {
+    height: 440px;
+  }
+}
+@media (max-width: 575px) {
+  .hero-slider2 {
+    height: 420px;
+  }
+}
+@media (max-width: 480px) {
+  .hero-slider2 {
+    height: 400px;
+  }
+}
 .hero-2 .th-hero-bg2 {
   position: absolute;
   inset: 0;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+@media (max-width: 991px) {
+  .hero-2 .th-hero-bg2 {
+    background-position: left center;
+  }
 }
 .hero-2 .th-hero-bg2 img {
   height: 100%;
@@ -8040,7 +8084,7 @@ ul.comment-list:has(> .th-comment-item ~ .th-comment-item):first-child
 }
 .hero-style2 .sub-title {
   margin-bottom: 25px;
-  color: var(--theme-color2);
+  color: var(--theme-color);
   gap: 22px;
   letter-spacing: normal;
   text-transform: capitalize;
@@ -8055,12 +8099,12 @@ ul.comment-list:has(> .th-comment-item ~ .th-comment-item):first-child
   margin-bottom: 32px;
 }
 .hero-style2 .sub-title:before {
-  background-color: var(--theme-color2);
+  background-color: var(--theme-color);
 }
 .hero-style2 .sub-title::after {
   height: 8px;
   width: 8px;
-  background-color: var(--theme-color2);
+  background-color: var(--theme-color);
   position: absolute;
   left: 60px;
   -webkit-transform: rotate(45deg);
@@ -14088,7 +14132,7 @@ span.select2-selection.select2-selection--single:focus {
   position: relative;
   z-index: 1;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.06);
-  background-color: #c4170d;
+  background-color: var(--theme-color);
   border-radius: 50px;
   padding: 40px;
   margin-top: -80px;
@@ -14924,9 +14968,12 @@ span.select2-selection.select2-selection--single:focus {
   padding: 8px 14px;
 }
 .service-card .box-top-wrap .box-top-left p {
-  color: var(--title-color);
+  color: var(--white-color);
   line-height: 1;
   margin-bottom: 1px;
+}
+.service-card .box-top-wrap .box-top-left img {
+  filter: brightness(0) invert(1);
 }
 .service-card .box-top-wrap .box-top-right .icon {
   background: var(--theme-color);
@@ -15458,7 +15505,7 @@ span.select2-selection.select2-selection--single:focus {
   border: 1px solid var(--th-border-color);
   border-radius: 50%;
   font-size: 35px;
-  color: #c4170d;
+  color: var(--theme-color);
   margin: 0 auto 29px;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
@@ -18458,14 +18505,14 @@ select, .form-control, .form-select, textarea, input{
 }
 }
 .submitbtn{
-  background-color: black;
+  background-color: var(--theme-color2);
 }
 #feedback {
     position: fixed;
     transform: rotate(90deg);
     right: -60px;
     top: 50%;
-    background-color: orange;
+    background-color: var(--theme-color);
     width: 150px;
     display: flex
 ;
@@ -18495,13 +18542,13 @@ select, .form-control, .form-select, textarea, input{
 .branchbuttuon{
   margin-bottom: 60px;
   padding: 20px 0;
-  background-color: black;
+  background-color: var(--theme-color2);
   text-align: center;
 }
 .branchbuttuon h5{
     padding: 10px 0;
   color: #fff;
-  background-color: #c4170d;
+  background-color: var(--theme-color);
   font-size: 18px;
  margin-bottom: 0;
 }
@@ -18509,17 +18556,44 @@ select, .form-control, .form-select, textarea, input{
   background-color: var(--theme-color2)!important;
 }
 .colorchange a{
-  color: #000!important
+  color: #fff!important;
 }
 .branchbuttuon h5 a{
   color: #fff;
 }
 .landingform{
-  background-color: #c4170d;
+  background-color: var(--theme-color);
   text-align: center;
 }
 .payment {
     border-radius: 10px;
     background-color: #008000b3;
     padding: 5px 15px;
+}
+
+/* Contrast Polish Overrides */
+.scrolligpart h3,
+.scrolligpart h3 span {
+  color: var(--white-color) !important;
+}
+
+.footer-widget .info-box_icon,
+.th-widget-contact .info-box_icon {
+  color: var(--white-color) !important;
+}
+
+.breadcumb-title {
+  color: var(--white-color) !important;
+}
+
+.breadcumb-menu li,
+.breadcumb-menu a,
+.breadcumb-menu span {
+  color: var(--white-color) !important;
+}
+
+.breadcumb-menu li:first-child,
+.breadcumb-menu li:first-child a,
+.breadcumb-menu li:first-child span {
+  color: var(--theme-color) !important;
 }

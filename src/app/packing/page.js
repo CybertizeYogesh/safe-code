@@ -1,14 +1,14 @@
-import React from "react";
+﻿import React from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import Sidebar from "@/components/Sidebar";
 
 export const metadata = {
-  title: "Packing Services | Indian Best Packers & Movers",
-  description: "Secure and professional packing services in India. High-quality bubble wraps, corrugated sheets, cartoon boxes, and custom wooden crates.",
+  title: "Best Packers and Movers Bangalore | Packing Services",
+  description: "Get professional packing services in Bangalore. We use high-quality materials and expert packers for safe home moving and office shifting.",
   alternates: {
-    canonical: "https://www.indianbestpackersmovers.com/packing.html",
+    canonical: "https://www.agarwalontimecargopackers.com/packing.html",
   },
 };
 
@@ -20,11 +20,11 @@ export default function PackingServices() {
     "description": "Secure and professional packing services in India. High-quality bubble wraps, corrugated sheets, cartoon boxes, and custom wooden crates.",
     "provider": {
       "@type": "LocalBusiness",
-      "name": "Indian Best Packers & Movers",
-      "image": "https://www.indianbestpackersmovers.com/assets/img/logo.png",
-      "telephone": "+91 8005746241",
-      "email": "info@indianbestpackersmovers.com",
-      "url": "https://www.indianbestpackersmovers.com"
+      "name": "Agarwal On Time Cargo Packers & Movers",
+      "image": "https://www.agarwalontimecargopackers.com/assets/img/logo.png",
+      "telephone": "+91 8095279595",
+      "email": "agarwalpackersmoversa@gmail.com",
+      "url": "https://www.agarwalontimecargopackers.com"
     },
     "areaServed": "India"
   };
@@ -108,3 +108,4 @@ export default function PackingServices() {
     </>
   );
 }
+

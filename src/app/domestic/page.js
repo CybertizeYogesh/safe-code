@@ -1,14 +1,14 @@
-import React from "react";
+﻿import React from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import Sidebar from "@/components/Sidebar";
 
 export const metadata = {
-  title: "Domestic Relocation | Indian Best Packers & Movers",
-  description: "Seamless domestic relocation services in India. Closed container trucks and inter-state shifting coordination with comprehensive insurance coverage.",
+  title: "Home Moving Services Bangalore | Domestic Relocation",
+  description: "Agarwal On Time Cargo Packers & Movers offers professional domestic home moving services from Bangalore to any city in India with complete transit safety.",
   alternates: {
-    canonical: "https://www.indianbestpackersmovers.com/domestic.html",
+    canonical: "https://www.agarwalontimecargopackers.com/domestic.html",
   },
 };
 
@@ -20,11 +20,11 @@ export default function DomesticRelocation() {
     "description": "Seamless domestic relocation services in India. Closed container trucks and inter-state shifting coordination with comprehensive insurance coverage.",
     "provider": {
       "@type": "LocalBusiness",
-      "name": "Indian Best Packers & Movers",
-      "image": "https://www.indianbestpackersmovers.com/assets/img/logo.png",
-      "telephone": "+91 8005746241",
-      "email": "info@indianbestpackersmovers.com",
-      "url": "https://www.indianbestpackersmovers.com"
+      "name": "Agarwal On Time Cargo Packers & Movers",
+      "image": "https://www.agarwalontimecargopackers.com/assets/img/logo.png",
+      "telephone": "+91 8095279595",
+      "email": "agarwalpackersmoversa@gmail.com",
+      "url": "https://www.agarwalontimecargopackers.com"
     },
     "areaServed": "India"
   };
@@ -46,7 +46,7 @@ export default function DomesticRelocation() {
                 <div className="page-content">
                   <h2 className="sec-title page-title">Domestic Relocation Service</h2>
                   <p>
-                    Indian Best Packers & Movers has devised convenient and brilliant ways to move its customers&apos; households. We have custom closed containers that keep goods safe from rains, heat, dust, and wind across state lines. Our wide-spread network across the country makes it easy for us to coordinate relocations between any states in India.
+                    Agarwal On Time Cargo Packers & Movers has devised convenient and brilliant ways to move its customers&apos; households. We have custom closed containers that keep goods safe from rains, heat, dust, and wind across state lines. Our wide-spread network across the country makes it easy for us to coordinate relocations between any states in India.
                   </p>
                   <p>
                     From initial pre-move planning and packing to customs formalities, transit, and unloading at destination, our domestic division provides a single window system to manage all logistics. We also offer transit insurance options for safety and peace of mind.
@@ -108,3 +108,4 @@ export default function DomesticRelocation() {
     </>
   );
 }
+

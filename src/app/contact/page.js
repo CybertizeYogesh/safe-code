@@ -1,14 +1,15 @@
-import React from "react";
+﻿import React from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
-import QuickQuoteForm from "@/components/QuickQuoteForm";
+import ContactPageForm from "@/components/ContactPageForm";
+import Script from "next/script";
 
 export const metadata = {
-  title: "Contact Us | Indian Best Packers & Movers",
-  description: "Get a free quotation for house shifting, car transport, or warehousing. Visit our Jaipur office, Jhunjhunu office, or Nawalgarh branch.",
+  title: "Contact Us | Agarwal Packers and Movers Bangalore",
+  description: "Need local packers and movers near me? Contact Agarwal Packers and Movers Bangalore at +91 8095279595 for affordable household transport service near me.",
   alternates: {
-    canonical: "https://www.indianbestpackersmovers.com/contact.html",
+    canonical: "https://www.agarwalontimecargopackers.com/contact.html",
   },
 };
 
@@ -16,24 +17,24 @@ export default function Contact() {
   const localBusinessSchema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "name": "Indian Best Packers & Movers",
-    "image": "https://www.indianbestpackersmovers.com/assets/img/logo.png",
-    "@id": "https://www.indianbestpackersmovers.com/#localbusiness",
-    "url": "https://www.indianbestpackersmovers.com",
-    "telephone": "+91 8005746241",
-    "email": "info@indianbestpackersmovers.com",
+    "name": "Agarwal On Time Cargo Packers & Movers",
+    "image": "https://www.agarwalontimecargopackers.com/assets/img/logo.png",
+    "@id": "https://www.agarwalontimecargopackers.com/#localbusiness",
+    "url": "https://www.agarwalontimecargopackers.com",
+    "telephone": "+91 8095279595",
+    "email": "agarwalpackersmoversa@gmail.com",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Plot No. 31,32, Shri Jagdishpuri, Heerapura, Ajmer Road",
-      "addressLocality": "Jaipur",
-      "addressRegion": "Rajasthan",
-      "postalCode": "302021",
+      "streetAddress": "#30 near marthalli bridge",
+      "addressLocality": "Bangalore",
+      "addressRegion": "Karnataka",
+      "postalCode": "560037",
       "addressCountry": "IN"
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": 26.8876,
-      "longitude": 75.7618
+      "latitude": 12.9562,
+      "longitude": 77.6980
     },
     "openingHoursSpecification": {
       "@type": "OpeningHoursSpecification",
@@ -54,13 +55,17 @@ export default function Contact() {
   const contactPageSchema = {
     "@context": "https://schema.org",
     "@type": "ContactPage",
-    "name": "Contact Us | Indian Best Packers & Movers",
-    "description": "Get in touch with Indian Best Packers & Movers for reliable moving and packing services in Jaipur and across India.",
-    "url": "https://www.indianbestpackersmovers.com/contact.html"
+    "name": "Contact | Agarwal On Time Cargo Packers & Movers",
+    "description": "Get in touch with Agarwal On Time Cargo Packers & Movers for reliable moving and packing services in Bangalore and across India.",
+    "url": "https://www.agarwalontimecargopackers.com/contact.html"
   };
 
   return (
     <>
+      <Script
+        src="https://www.google.com/recaptcha/api.js"
+        strategy="afterInteractive"
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
@@ -70,138 +75,80 @@ export default function Contact() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(contactPageSchema) }}
       />
       <Navbar />
-      <Breadcrumb title="Contact Us" />
+      <Breadcrumb title="Get a Free Quote" />
 
       {/* Contact Cards Section */}
-      <section className="space-top">
+      <div className="contact-area-2 space-top" id="contact-sec">
         <div className="container">
+          <div className="title-area text-center">
+            <h2 className="sec-title">Our Contact Information</h2>
+          </div>
           <div className="row gy-4 justify-content-center">
-            {/* Address */}
-            <div className="col-md-6 col-lg-4">
-              <div className="th-widget-contact info-box" style={{ background: "#f8f9fa", padding: "30px", borderRadius: "10px", height: "100%", boxShadow: "0 4px 15px rgba(0,0,0,0.05)" }}>
-                <div style={{ display: "flex", gap: "15px" }}>
-                  <div className="info-box_icon" style={{ fontSize: "24px", color: "#c4170d" }}>
-                    <i className="fas fa-location-dot"></i>
-                  </div>
-                  <div className="info-contnt">
-                    <h4 className="footer-info-title" style={{ fontSize: "20px", fontWeight: "700", marginBottom: "10px" }}>Jaipur Head Office</h4>
-                    <p className="info-box_text" style={{ margin: "0", color: "#666" }}>
-                      Plot No. 31,32, Shri Jagdishpuri, Heerapura, Ajmer Road, Jaipur - 302021
-                    </p>
-                  </div>
+            <div className="col-xl-4 col-lg-6 contact-feature-wrap">
+              <div className="contact-feature">
+                <div className="contact-feature-icon">
+                  <i className="fas fa-location-dot"></i>
+                </div>
+                <div className="media-body">
+                  <p className="contact-feature_label">Our Address</p>
+                  #30 near marthalli bridge Bangalore 560037
                 </div>
               </div>
             </div>
-
-            {/* Jhunjhunu Branch */}
-            <div className="col-md-6 col-lg-4">
-              <div className="th-widget-contact info-box" style={{ background: "#f8f9fa", padding: "30px", borderRadius: "10px", height: "100%", boxShadow: "0 4px 15px rgba(0,0,0,0.05)" }}>
-                <div style={{ display: "flex", gap: "15px" }}>
-                  <div className="info-box_icon" style={{ fontSize: "24px", color: "#c4170d" }}>
-                    <i className="fas fa-location-dot"></i>
-                  </div>
-                  <div className="info-contnt">
-                    <h4 className="footer-info-title" style={{ fontSize: "20px", fontWeight: "700", marginBottom: "10px" }}>Jhunjhunu Branch</h4>
-                    <p className="info-box_text" style={{ margin: "0", color: "#666", marginBottom: "10px" }}>
-                      Shop No 12/13, Inderpuri Colony , Loharu Bypass Road Near Tilak School, Pilani District Jhunjhunu Rajasthan 333031
-                    </p>
-                    <a href="tel:8094243586" className="info-box_link" style={{ color: "#c4170d", fontWeight: "600" }}>
-                      <i className="fas fa-phone"></i> +91 8094243586
-                    </a>
-                  </div>
+            <div className="col-xl-4 col-lg-6 contact-feature-wrap">
+              <div className="contact-feature">
+                <div className="contact-feature-icon">
+                  <i className="fas fa-phone"></i>
+                </div>
+                <div className="media-body">
+                  <p className="contact-feature_label">Contact Number</p>
+                  <a href="tel:8095279595" className="contact-feature_link">+91 8095279595</a>
                 </div>
               </div>
             </div>
-
-            {/* Nawalgarh Branch */}
-            <div className="col-md-6 col-lg-4">
-              <div className="th-widget-contact info-box" style={{ background: "#f8f9fa", padding: "30px", borderRadius: "10px", height: "100%", boxShadow: "0 4px 15px rgba(0,0,0,0.05)" }}>
-                <div style={{ display: "flex", gap: "15px" }}>
-                  <div className="info-box_icon" style={{ fontSize: "24px", color: "#c4170d" }}>
-                    <i className="fas fa-location-dot"></i>
-                  </div>
-                  <div className="info-contnt">
-                    <h4 className="footer-info-title" style={{ fontSize: "20px", fontWeight: "700", marginBottom: "10px" }}>Nawalgarh Branch</h4>
-                    <p className="info-box_text" style={{ margin: "0", color: "#666", marginBottom: "10px" }}>
-                      Shop No 10, Aniket Plaza, Near Canara Bank, Poddar College Rd, Nawalgarh, Rajasthan - 333042
-                    </p>
-                    <a href="tel:09352637176" className="info-box_link" style={{ color: "#c4170d", fontWeight: "600" }}>
-                      <i className="fas fa-phone"></i> +91 9352637176
-                    </a>
-                  </div>
+            <div className="col-xl-4 col-lg-6 contact-feature-wrap">
+              <div className="contact-feature">
+                <div className="contact-feature-icon">
+                  <i className="fa-sharp fa-regular fa-envelope"></i>
                 </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="row gy-4 justify-content-center mt-30">
-            {/* Phones */}
-            <div className="col-md-6">
-              <div className="th-widget-contact info-box" style={{ background: "#f8f9fa", padding: "30px", borderRadius: "10px", boxShadow: "0 4px 15px rgba(0,0,0,0.05)" }}>
-                <div style={{ display: "flex", gap: "15px" }}>
-                  <div className="info-box_icon" style={{ fontSize: "24px", color: "#c4170d" }}>
-                    <i className="fas fa-phone"></i>
-                  </div>
-                  <div className="info-contnt">
-                    <h4 className="footer-info-title" style={{ fontSize: "20px", fontWeight: "700", marginBottom: "10px" }}>Call Us Anytime</h4>
-                    <p className="info-box_text" style={{ margin: "0", color: "#666" }}>
-                      <a href="tel:8005746241" style={{ color: "#1f1f1f", marginRight: "15px" }}>+91 8005746241</a>
-                      <a href="tel:8094273586" style={{ color: "#1f1f1f" }}>+91 8094273586</a>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Email */}
-            <div className="col-md-6">
-              <div className="th-widget-contact info-box" style={{ background: "#f8f9fa", padding: "30px", borderRadius: "10px", boxShadow: "0 4px 15px rgba(0,0,0,0.05)" }}>
-                <div style={{ display: "flex", gap: "15px" }}>
-                  <div className="info-box_icon" style={{ fontSize: "24px", color: "#c4170d" }}>
-                    <i className="fas fa-envelope"></i>
-                  </div>
-                  <div className="info-contnt">
-                    <h4 className="footer-info-title" style={{ fontSize: "20px", fontWeight: "700", marginBottom: "10px" }}>Email Address</h4>
-                    <p className="info-box_text" style={{ margin: "0", color: "#666" }}>
-                      <a href="mailto:info@indianbestpackersmovers.com" style={{ color: "#1f1f1f" }}>info@indianbestpackersmovers.com</a>
-                    </p>
-                  </div>
+                <div className="media-body">
+                  <p className="contact-feature_label">E-mail</p>
+                  <a href="mailto:agarwalpackersmoversa@gmail.com" className="contact-feature_link">
+                    agarwalpackersmoversa@gmail.com
+                  </a>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
 
-      {/* Form and Map Section */}
-      <section className="space">
+      {/* Form Section */}
+      <div className="space">
         <div className="container">
-          <div className="row gy-40">
-            <div className="col-lg-6">
-              <div className="title-area mb-4">
-                <span className="sub-title before-none">Get In Touch</span>
-                <h2 className="sec-title">Have any questions? Write us a message!</h2>
-              </div>
-              <QuickQuoteForm isContactPage={true} />
-            </div>
-            <div className="col-lg-6">
-              <div style={{ borderRadius: "10px", overflow: "hidden", height: "450px", boxShadow: "0 4px 15px rgba(0,0,0,0.1)" }}>
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3558.118933391783!2d75.72620717618258!3d26.899738076654877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db48eb3a68297%3A0xe54e6067b5e40ee8!2sIndian%20Best%20Packers%20%26%20Movers%20Jaipur!5e0!3m2!1sen!2sin!4v1716382000000!5m2!1sen!2sin"
-                  width="100%"
-                  height="100%"
-                  style={{ border: 0 }}
-                  allowFullScreen=""
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                ></iframe>
+          <div className="bg-smoke rounded-20">
+            <div className="row gx-0">
+              <div className="col-xl-12">
+                <ContactPageForm />
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+
+      {/* Map Embed Section */}
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.00165406126!2d77.6953713!3d12.9557999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babf22f7cd4bf19%3A0x9d4948aa33e9b11b!2sMarathahalli%20Bridge%2C%20Marathahalli%2C%20Bengaluru%2C%20Karnataka%20560037!5e0!3m2!1sen!2sin!4v1716450000000!5m2!1sen!2sin"
+        width="100%"
+        height="450"
+        style={{ border: 0, display: "block" }}
+        allowFullScreen=""
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
+      ></iframe>
 
       <Footer />
     </>
   );
 }
+

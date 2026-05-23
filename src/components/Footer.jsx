@@ -69,36 +69,32 @@ export default function Footer() {
                       <Link href="/">
                         <img
                           src="/assets/img/logo.png"
-                          alt="Indian Best Packers and Movers Logo"
+                          alt="Agarwal On Time Cargo Packers and Movers Logo"
                           width="160"
-                          height="52"
+                          height="48"
+                          style={{ width: "160px", height: "auto" }}
                           loading="lazy"
                         />
                       </Link>
                     </div>
                     <p className="about-text">
-                      Indian Best Packers & Movers Is The Trusted Source for All Your Moving & Logistical Needs. Get in
+                      Agarwal On Time Cargo Packers & Movers Is The Trusted Source for All Your Moving & Logistical Needs. Get in
                       touch with us today!!
                     </p>
                     <div className="th-social">
-                      <a href="https://www.facebook.com/indianbestpackers" target="_blank" rel="noopener noreferrer" aria-label="Facebook Page">
+                      <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Facebook Page">
                         <i className="fab fa-facebook"></i>
                       </a>
-                      <a href="https://www.instagram.com/indianbestpackersinjaipur/?igsh=cm81OThqZmZqanY5" target="_blank" rel="noopener noreferrer" aria-label="Instagram Page">
+                      <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram Page">
                         <i className="fab fa-instagram"></i>
                       </a>
-                      <a
-                        href="https://www.linkedin.com/authwall?trk=bf&amp;trkInfo=AQHv0yheWL0pVgAAAY2NtlfQIxAvMxotlDAJWRG8K9LjLDWfzi_8uYx_pIbn7L2upstBJvnGE780XlOfXXcHLBpADEDKVHI-qg6K_5nRnKcSoiuQVYaqFSMFuXEVG2cC61N4E34=&amp;original_referer=&amp;sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Findian-best-packers-and-movers-jaipur-4b002b219%3Futm_source%3Dshare%26utm_campaign%3Dshare_via%26utm_content%3Dprofile%26utm_medium%3Dandroid_app"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label="LinkedIn Profile"
-                      >
+                      <a href="#" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
                         <i className="fab fa-linkedin"></i>
                       </a>
-                      <a href="https://youtube.com/@packersandmoversinjaipur9686?si=yUEdf5y6mY6eWQv7" target="_blank" rel="noopener noreferrer" aria-label="YouTube Channel">
+                      <a href="#" target="_blank" rel="noopener noreferrer" aria-label="YouTube Channel">
                         <i className="fab fa-youtube"></i>
                       </a>
-                      <a href="https://x.com/Pramod67075947?t=vztkl5zRL_5T9rd6a3XPlQ&s=09" target="_blank" rel="noopener noreferrer" aria-label="Twitter Profile">
+                      <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Twitter Profile">
                         <i className="fab fa-twitter"></i>
                       </a>
                     </div>
@@ -182,42 +178,14 @@ export default function Footer() {
                       <div className="info-contnt">
                         <h4 className="footer-info-title">Address</h4>
                         <p className="info-box_text">
-                          Plot No. 31,32, Shri Jagdishpuri, Heerapura, Ajmer Road, Jaipur - 302021
+                          #30 near marthalli bridge Bangalore 560037
                         </p>
-                        <a href="tel:8005746241" className="info-box_link pt-3">
-                          <i className="fas fa-phone"></i> +91 8005746241
+                        <a href="tel:8095279595" className="info-box_link pt-3">
+                          <i className="fas fa-phone"></i> +91 8095279595
                         </a>
                       </div>
                     </div>
-                    <div className="info-box">
-                      <div className="info-box_icon">
-                        <i className="fas fa-location-dot"></i>
-                      </div>
-                      <div className="info-contnt">
-                        <h4 className="footer-info-title">Branch Jhunjhunu</h4>
-                        <p className="info-box_text">
-                          Shop No 12/13, Inderpuri Colony , Loharu Bypass Road Near Tilak School, Pilani District
-                          Jhunjhunu Rajasthan 333031
-                        </p>
-                        <a href="tel:8094243586" className="info-box_link pt-3">
-                          <i className="fas fa-phone"></i> +91 8094243586
-                        </a>
-                      </div>
-                    </div>
-                    <div className="info-box">
-                      <div className="info-box_icon">
-                        <i className="fas fa-location-dot"></i>
-                      </div>
-                      <div className="info-contnt">
-                        <h4 className="footer-info-title">Nawalgarh Branch</h4>
-                        <p className="info-box_text">
-                          Shop No 10, Aniket Plaza, Near Canara Bank, Poddar College Rd, Nawalgarh, Rajasthan - 333042
-                        </p>
-                        <a href="tel:09352637176" className="info-box_link pt-3">
-                          <i className="fas fa-phone"></i> +91 9352637176
-                        </a>
-                      </div>
-                    </div>
+
                     <div className="info-box">
                       <div className="info-box_icon">
                         <i className="fas fa-phone"></i>
@@ -225,12 +193,12 @@ export default function Footer() {
                       <div className="info-contnt">
                         <h4 className="footer-info-title">Call Us</h4>
                         <p className="info-box_text">
-                          <a href="tel:08005746241" className="info-box_link">
-                            +91 8005746241
+                          <a href="tel:08095279595" className="info-box_link">
+                            +91 8095279595
                           </a>
                           <br />
-                          <a href="tel:8094273586" className="info-box_link">
-                            +91 8094273586
+                          <a href="tel:8095279595" className="info-box_link">
+                            +91 8095279595
                           </a>
                         </p>
                       </div>
@@ -242,8 +210,8 @@ export default function Footer() {
                       <div className="info-contnt">
                         <h4 className="footer-info-title">Email Us</h4>
                         <p className="info-box_text">
-                          <a href="mailto:info@indianbestpackersmovers.com" className="info-box_link">
-                            info@indianbestpackersmovers.com
+                          <a href="mailto:agarwalpackersmoversa@gmail.com" className="info-box_link">
+                            agarwalpackersmoversa@gmail.com
                           </a>
                         </p>
                       </div>
@@ -260,8 +228,8 @@ export default function Footer() {
             <div className="row">
               <div className="col-lg-12">
                 <p className="copyright-text" style={{ textAlign: "center" }}>
-                  Copyright <i className="fal fa-copyright"></i> 2024{" "}
-                  <Link href="/">Indian Best Packers & Movers</Link>. All Rights Reserved.
+                  Copyright <i className="fal fa-copyright"></i> 2026{" "}
+                  <Link href="/">Agarwal On Time Cargo Packers & Movers</Link>. All Rights Reserved.
                 </p>
               </div>
             </div>
@@ -276,12 +244,12 @@ export default function Footer() {
 
       <div className="floating_buttons">
         <div className="call_btn bounce">
-          <a href="tel:8005746241" aria-label="Call Indian Best Packers and Movers">
+          <a href="tel:8095279595" aria-label="Call Agarwal On Time Cargo Packers and Movers">
             <img src="/img/floating-call.png" alt="Floating Call" width="50" height="50" className="img-fluid" />
           </a>
         </div>
         <div className="whatsapp_btn bounce">
-          <a href="https://wa.me/8005746241" target="_blank" rel="noopener noreferrer" aria-label="Chat with Indian Best Packers and Movers on WhatsApp">
+          <a href="https://wa.me/8095279595" target="_blank" rel="noopener noreferrer" aria-label="Chat with Agarwal On Time Cargo Packers and Movers on WhatsApp">
             <img src="/img/whatsapp.png" alt="WhatsApp" width="50" height="50" className="img-fluid" />
           </a>
         </div>

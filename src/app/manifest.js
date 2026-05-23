@@ -1,8 +1,8 @@
 export default function manifest() {
   return {
-    name: "Indian Best Packers & Movers",
-    short_name: "Indian Best Packers",
-    description: "Indian Best Packers & Movers is the trusted source for all your moving and logical needs in Jaipur and all over India.",
+    name: "Agarwal On Time Cargo Packers & Movers",
+    short_name: "Agarwal On Time Cargo Packers",
+    description: "Agarwal On Time Cargo Packers & Movers is the trusted packers and movers in Bangalore, offering professional home moving and household shifting services all over India.",
     start_url: "/",
     display: "standalone",
     background_color: "#ffffff",

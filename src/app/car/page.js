@@ -1,14 +1,14 @@
-import React from "react";
+﻿import React from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import Sidebar from "@/components/Sidebar";
 
 export const metadata = {
-  title: "Car Transportation | Indian Best Packers & Movers",
-  description: "Secure vehicle shipping and car transportation services in India. High-quality car carrier trailers, door-to-door delivery, and claim settlement.",
+  title: "Car Transportation Companies Bangalore | Vehicle Shipping",
+  description: "Searching for reliable car transportation companies? We offer secure car carrier shipping and vehicle shifting services in Bangalore and all India.",
   alternates: {
-    canonical: "https://www.indianbestpackersmovers.com/car.html",
+    canonical: "https://www.agarwalontimecargopackers.com/car.html",
   },
 };
 
@@ -20,11 +20,11 @@ export default function CarTransportation() {
     "description": "Secure vehicle shipping and car transportation services in India. High-quality car carrier trailers, door-to-door delivery, and claim settlement.",
     "provider": {
       "@type": "LocalBusiness",
-      "name": "Indian Best Packers & Movers",
-      "image": "https://www.indianbestpackersmovers.com/assets/img/logo.png",
-      "telephone": "+91 8005746241",
-      "email": "info@indianbestpackersmovers.com",
-      "url": "https://www.indianbestpackersmovers.com"
+      "name": "Agarwal On Time Cargo Packers & Movers",
+      "image": "https://www.agarwalontimecargopackers.com/assets/img/logo.png",
+      "telephone": "+91 8095279595",
+      "email": "agarwalpackersmoversa@gmail.com",
+      "url": "https://www.agarwalontimecargopackers.com"
     },
     "areaServed": "India"
   };
@@ -36,7 +36,7 @@ export default function CarTransportation() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaJson) }}
       />
       <Navbar />
-      <Breadcrumb title="Car Transportation" />
+      <Breadcrumb title="Car Transportation Companies" />
 
       <section className="space-top space-extra2-bottom">
         <div className="container">
@@ -44,7 +44,7 @@ export default function CarTransportation() {
             <div className="col-xxl-8 col-lg-8">
               <div className="page-single mb-30">
                 <div className="page-content">
-                  <h2 className="sec-title page-title">Car Transportation Service</h2>
+                  <h2 className="sec-title page-title">Car Transportation Companies in Bangalore</h2>
                   <p>
                     We offer reliable Car Transportation to individuals as well as corporate customers to ensure swift, safe vehicle shipping using specialized car carrier trailers. The car transport vehicle is equipped with customized locking chains, seat belt anchors, and protective padding to keep the car securely in position.
                   </p>
@@ -108,3 +108,4 @@ export default function CarTransportation() {
     </>
   );
 }
+
