@@ -22,7 +22,7 @@ export default function About() {
     "publisher": {
       "@type": "Organization",
       "name": "Agarwal On Time Cargo Packers & Movers",
-      "logo": "https://www.agarwalontimecargopackers.com/assets/img/logo.png"
+      "logo": "https://www.agarwalontimecargopackers.com/assets/img/logo.webp"
     }
   };
 
@@ -43,7 +43,7 @@ export default function About() {
                 <div className="img-box1">
                   <div className="shape1 jump">
                     <img
-                      src="/assets/img/about/about-2-right.jpg"
+                      src="/assets/img/about/about-2-right.webp"
                       alt="Agarwal On Time Cargo Packers and Movers Loading Operations"
                       width="270"
                       height="380"
@@ -53,7 +53,7 @@ export default function About() {
                   <div className="img2">
                     <img
                       className="tilt-active"
-                      src="/assets/img/about/about-2-main.jpg"
+                      src="/assets/img/about/about-2-main.webp"
                       alt="Agarwal On Time Cargo Packers and Movers Shifting Team"
                       width="400"
                       height="500"
